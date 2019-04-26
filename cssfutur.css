@@ -1,0 +1,560 @@
+/* Resposiveeeee */ 
+
+
+@media only screen and (max-width: 1050px) {
+    body, html {
+    height: 100%;
+    margin: 0;
+}
+    header{
+        display:block;
+		width:100%;
+		height:auto;
+		margin:0;
+    }
+    #contenus{
+    margin: 0 auto 50px auto;
+    padding: 16px;
+    max-width: 1200px ;
+    width:100%;
+    margin-left:0px;
+    }
+    h1{
+	display:block;
+	width:auto;
+	text-align:center;
+    }
+article img{
+        width:100%;
+    }}
+
+@media only screen and (max-width: 768px){  
+    header{
+        display:block;
+		width:100%;
+		height:auto;
+    }
+    .role-hover h4{
+        font-size:80%;}
+    .gallery{
+        background-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .gallery > div:hover >img {transform:none;}
+    .gallery.cf{display: block; width: min-content;}
+    #contenus{width:100%;font-size: 20px;}
+    #contenus p, h3{
+                    font-size: 20px;
+                    margin-left:0;}
+    input{ font-size: larger; background-color: aliceblue;}
+    .role-hover h4{
+        font-size:80%;}
+    .role-hover h4{display:none;}
+    div.role-hover {display:none;}
+    img.imageNY{opacity:inherit;}
+    h1{display: none;}
+    
+} 
+/* fin médias */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+   margin-top:0;
+    font-family: 'Jura', sans-serif;
+    background-image: url("img/noraetyann.png"), url(img/chalkboard.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: right bottom, center;
+    background-size: 22%, auto;
+    background-attachment: fixed;
+	}
+
+
+/* pg d'accueil */
+
+.container {
+     position: relative;
+    width: 25%;
+    margin: auto;
+}
+
+.imagelogo {
+  display: block;
+    width: 100%;
+    height: auto;
+}
+.surimg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: grey;
+}
+
+.container:hover .surimg {
+  opacity: 1;
+}
+
+.texte {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* cacher */
+
+#stimemachine{
+    display:none;
+}
+#imgbanniere1{
+    display:none;
+}
+#versle {
+    display:none;
+}
+#retour {
+    display:none;
+}
+#navbar a, li{
+	display:none;
+}
+
+
+/* header */ 
+header.top{
+    margin: auto;
+    background-image: url("img/bannierefutur.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+
+span.burgersim{
+	color: white;
+	font-size:3em;
+
+}
+
+img.logo{
+    margin-right:5%;
+}
+.logo{
+    width:10%;
+    display: flex;
+  justify-content: flex-end;
+     animation-name: rotateIn;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+#logo{
+      width: 100%;
+    height: auto;
+}
+/* contenus de la page */
+h1{
+   color: white;
+    text-align: center;
+    font-family: 'Bungee', cursive;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px black, 0 0 5px blue, 0 0 15px darkblue; */
+	position: relative;
+	margin-bottom: -15px;
+}
+
+#contenus{
+	color: white;
+	background-color: rgba(53,75,96,0.3);
+    border: 1px solid white;
+    border-radius: 5px;
+	max-width: 1200px;
+    margin: auto;
+}
+
+#contenus a{
+color: #fecb05;
+text-decoration: none;
+}
+
+/* ---------------------------      home.php       ------------------------------ */
+
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+/*------------------------ partie 1 ---------------------------------- */
+
+.profils {
+  width: 100%;
+        margin: auto;
+}
+
+.perso{
+    width:calc(50% - 7px);
+    display:inline-block;
+}
+.perso + .perso{
+    margin-left:5px;
+}
+.heading-title h3 {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.team-member {
+    overflow: hidden;
+}
+.team-member, .team-member .team-img {
+    position: relative;
+}
+
+.team-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    border: 20px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.90);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.team-member:hover .team-hover .desk {
+    top: 35%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+    opacity: 1;
+}
+.team-hover .desk {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translateY(-55%);
+    -ms-transform: translateY(-55%);
+    transform: translateY(-55%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    padding: 0 20px;
+}
+.desk, .desk h4, .team-hover .s-link a {
+    text-align: center;
+    color: #222;
+}
+.team-member:hover .team-hover .s-link {
+    bottom: 10%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+    opacity: 1;
+}
+.team-hover .s-link {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    -webkit-transform: translateY(45%);
+    -ms-transform: translateY(45%);
+    transform: translateY(45%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    font-size: 35px;
+}
+.desk, .desk h4, .team-hover .s-link a {
+    text-align: center;
+    color: #222;
+}
+.team-member .s-link a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 16px;
+}
+.team-title {
+    position: static;
+    padding: 20px 0;
+    display: inline-block;
+    letter-spacing: 2px;
+    width: 100%;
+}
+.team-title h5 {
+    margin-bottom: 0px;
+    display: block;
+    text-transform: uppercase;
+}
+.team-title span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #a5a5a5;
+    letter-spacing: 1px;
+}
+/*-----------------------------------------------------------------------*/
+.role-img{
+background-color:black;
+width
+}
+
+
+.imageNY{
+opacity: 0;
+}
+
+.role-hover h4{
+	opacity: 1;
+	text-align: center;
+    color: white;
+	position: absolute;
+    top: 40%;
+    font-size:2em;
+    width: 100%;
+   transition: all 0.3s 0.2s;
+}
+.role-hover:hover{
+	opacity:0;
+}
+
+.role-img:hover .imageNY{
+	opacity:1;
+}
+.role-img:hover{
+cursor: pointer;
+ height:100%;
+transition: all 2s;
+    }
+
+.role-hover{
+    height:50%;
+}
+
+.team-member:hover .role-hover h4{
+ display:none;   
+}
+
+/* page de liens */
+article{
+    margin-bottom: 2%;
+    background-color: #fdc909a3;
+    padding: 2%;
+    border: solid 1px white;
+    border-radius: 5px;
+    color: black;
+    }
+/*----------------------- footer / bas de page -----------------------------*/
+
+footer#bas{
+	    text-align:center;
+		margin-top:2%;
+		margin-bottom: 2%;
+}
+
+#bas a {
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    color: white;
+    line-height: 18px;
+    
+}
+.lienscss{
+	display:inline-block;
+}
+p.lienscss a:before, p.lienscss a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+p.lienscss a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+p.lienscss a:after
+{
+   right: 0px;
+    bottom: 0px;
+}
+
+p.lienscss a:hover:before, p.lienscss a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+
+
+/*-------------------------------*/
+/*      carousel                 */
+/*-------------------------------*/
+
+* {box-sizing:border-box}
+
+/* le Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* le texte sous le slider */
+.text {
+  color: #f2f2f2;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*---------------------------*/
+/*          la sidebar              */
+/*-------------------------------*/	
+
+
+#menu {
+   display:none;
+}
+	
+	 /* la navigation sur le côté */
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+
+/*liens du menu */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* changement de couleur menu */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position du bouton pour fermer */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#contenus {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+

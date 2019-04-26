@@ -1,0 +1,469 @@
+@font-face {
+    font-family: "Veteran Typewriter";
+    src: url(fonts/veterantypewriter.ttf) format("truetype");
+}
+
+body {
+    background-color: dimgray 0,5;
+    background-image: url(img/fond-past.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size:cover;
+    font-family: 'Veteran Typewriter';
+
+}  
+
+/* entête */
+header{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/*---------------cacher la sidebar-----------------------*/
+#mySidenav {
+	display:none;
+}
+span.burgersim{
+	display:none;
+}
+#imgbanniere1{
+    display:none;
+}
+#versle {
+    display:none;
+}
+#retour {
+    display:none;
+}
+
+/* pg d'accueil */
+
+/* ---------------------------      home.php       ------------------------------ */
+
+div.logo{
+    margin:auto;
+}
+
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #8a785c;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.container {
+    position: relative;
+    width: 25%;
+    margin:auto;
+}
+
+.imagelogo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.surimg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 93%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgba(0,0,0,0.7);
+    border-radius:200px 200px 200px 200px;
+}
+
+.container:hover .surimg {
+    opacity: 1;
+}
+
+.texte {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/*--------------------------------------*/
+#logo {
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    height: 150px;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+h2{
+    font-family: 'Lobster', cursive;
+}
+ 
+a {
+    cursor: pointer;   
+    text-decoration: none;
+    color:rgb(100,13,13)
+}
+
+
+#contents {
+	max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding:10%;
+    border-radius: 10px;
+}
+
+#contenus{
+    background-color: rgba(166, 143, 111, 0.5);
+    border:1px solid rgb(104, 78,43);
+    margin:0 2% 5% 2%;
+    padding:10px;
+    font-size:20px;
+    font-family: 'Veteran Typewriter';
+}
+
+
+/*  bas de page */
+
+footer {
+	position: fixed;
+    width:100%;
+}
+
+
+#bas{
+    position: fixed;
+    left: auto;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Marck Script', cursive;
+    z-index: 1;
+}
+
+
+#bas p {
+    display: inline-block;
+    
+}
+
+#bas a {
+    padding: 10px 15px;
+    line-height: 18px;
+    display: inline;
+    background-color: #A0785A;
+    text-shadow:0px 1px 1px #BC9D90;
+    box-shadow: 0 0 0 5px #A0785A, 1px 1px 4px 6px #7F7F7F;
+    border: 2px dashed #101010;
+    border-radius:6px;
+}
+
+#bas a:hover{
+    text-shadow:1px 1px 3px #da985e;
+    position: relative; 
+    top: -5px;
+}
+
+#menu{
+    background-image: linear-gradient(#ccba96, #5b3d13);
+    height:50px;
+    text-align: center;
+    margin:0 2%;
+    
+}
+#navbar {
+    display:inline-block;
+    text-align: center;
+}
+
+ul#navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-flex;
+    text-align:center;
+}
+
+
+#navbar a {
+    color: white;
+    padding: 14px;
+    position: relative;
+   /* font-weight: 300; /* entre regular et light */
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: 'Tempus Sans ITC'; 
+}
+
+*#navbar a:hover{
+    text-shadow: 1px 1px 3px black;
+}
+
+
+/*==============================*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 175px;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor:pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+#stimemachine {
+    display:none;
+}
+
+
+/* Page 1 */
+
+.profils {
+    width: 100%;
+}
+
+
+.perso:last-child {
+
+    float:right;
+}
+
+.perso{
+    width:45%;
+    height:50%;
+    display:inline-block;
+    text-align:center;
+    background-color:white;
+    padding:1%;
+    border:2px solid black;
+}
+
+.roles{
+    width:100%;
+    margin:auto;
+}
+
+.character{
+    display:inline-block;
+    vertical-align: top;
+    text-align:center;
+    width:44%;
+    margin:0 2%;
+}
+
+.character img{
+    display:block;
+    width:40%;
+    margin:auto;
+}
+
+/*Page 3*/
+
+article img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto }
+    }
+
+
+/* Liens */
+
+article {background-color: rgba(123, 87, 39, 0.5);
+    border: solid 1px rgba(56, 40, 20, 0.5);
+    border-radius: 5px;
+    padding:5px;
+    margin:5px;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-image: url(img/fond-past-xs.jpg); /*À revoir un peu*/
+    }
+    
+    .logo{
+        position:relative;
+    }
+    
+    #menu{
+        height:auto;
+    }
+    
+    ul#navbar{
+        display:table;
+        margin:0 auto;
+        position:relative;
+        width:100%;
+    }
+    #navbar li{
+        border:1px solid white;
+        float:left;
+         width:100%;
+    }
+    .gallery{
+        width:inherit;
+    }
+    
+    .gallery > div{
+        float:none;
+        display:table;
+        margin:auto;
+    }
+    
+    article img{
+        position:block;
+        width:100%;
+    }
+    
+    #bas{
+        position:relative;
+    }
+    
+    #bas p{
+        display:block;
+    }
+    
+    #bas a {
+        background-color:transparent;
+        -webkit-box-shadow: none;
+	    -moz-box-shadow: none;
+	    box-shadow: none;
+        border:0px;
+        color:snow;
+        
+    }
+}

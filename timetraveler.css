@@ -1,0 +1,704 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+
+
+
+/*------- Responsive */ 
+
+@media only screen and (max-width: 1050px) {
+   
+    header{
+        display:inline-block;
+		width:100%;
+		height:auto;
+		margin:0;
+    }
+    article img{
+        width:100%;
+    }
+  
+    h1,h2{
+	display:block;
+	width:auto;
+	text-align:center;
+	}
+  
+}
+                        
+/* gros téléphone tablette */
+@media only screen and (max-width: 768px){  
+    header{
+        display:block;
+		width:100%;
+		height:auto;
+		margin:0;
+    }
+    #logo{display:none;}
+                    #menu{
+                       background-image: url(img/burgertt.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-color:  rgba(65, 93, 149, 0.8);
+                        text-align:center;
+                        width:100%;
+                        margin:auto;
+                        position:absolute;
+                        top:0;
+                        left:0;
+                        height:55px;
+                        padding:10px 5px 10px 5px;
+                        }
+                        
+                        #menu ul{
+                            margin:10px auto;
+                            padding:4px;
+                            display:block;
+                            list-style-type:none;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: visibility 0s, opacity 1s linear;
+                        }
+                        #navbar a{
+                            float:none;
+                        }
+                         ul#navbar{
+                        width:100%;
+                        display: grid;
+                         }
+                       #menu ul li{
+                            text-align: center;
+                            display: inline-block;
+                            border:solid 1px #555;
+                        }
+                        
+                       #menu ul li a:hover{
+                            background-color:black;
+                            color:white;
+                            cursor:pointer;
+                        }
+                        
+                       #menu:hover ul{
+                            visibility: visible;
+                            opacity: 1;
+                        }
+    
+                        #retour,#versle,#logo 
+                        {animation : none;}
+    
+                        .gallery.cf{display: block;
+                         width: min-content;}
+                         footer#bas{
+                        display:block;
+                        position:inherit;
+                         }
+                        #retour,#versle,#logo {animation : none;}
+    
+                        .gallery > div:hover >img {transform:none;}
+    
+                        #contenus{width:100%;font-size: 20px;}
+   
+                        #contenus p, h3{
+                                        margin-left:0;
+    }
+    
+                        input{ font-size: larger; background-color: aliceblue;}
+   
+                        .role-hover h4{display:none;}
+                         
+                        div.role-hover {display:none;}
+                        
+                        img.imageNY{opacity:inherit;}
+                                    
+                        h4{font-size:80%;}
+    
+                         .gallery{
+                            width:inherit;
+                        }
+
+                        .gallery > div{
+                            float:none;
+                            display:table;
+                            margin:auto;
+                        }
+
+                        article img{
+                            position:block;
+                            width:100%;
+                        }
+         
+     }
+
+
+
+/* téléphone */
+@media only screen and (max-height: 450px) {
+    .gallery.cf{display: block;
+    width: auto;}
+    footer#bas{
+        display:block;
+        position:inherit;
+    }
+    h1{
+        display:none; }
+    #contenus{
+        font-size: initial;
+    }
+} 
+    
+body, html {
+    height: 100%;
+}
+
+body{
+    margin: 10px 0 ;
+    padding: 0 ;
+	font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+   background-image: url('img/fondfutur.gif'); 
+    background-color: rgb(42, 47, 61);   
+    }
+
+/*---------------entête-----------------------*/
+header{
+    text-align: center;
+}
+
+div.logo{
+    width:10%;
+    right:0;
+    position: absolute;
+}
+#logo{
+   width: 100%;
+    height: auto;
+    animation-name: bounceInDown;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+}
+#imgbanniere1{
+    display: flex;
+    justify-content: flex-end;
+    height: 15%;
+    width:15%;
+}
+
+header.top{
+ background-color: rgba(41,50,67,0.7) !important;
+margin-top:0;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}
+
+
+#retour {
+    margin-top: 5%;
+    opacity: 0.8;
+    animation-name: slideInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    padding-top: 5px;
+    height:30%;
+    width:30%;
+    
+}
+#versle{
+     opacity: 0.8;
+    animation: slideInLeft 4s;
+    animation-timing-function: ease;
+    height:30%;
+    width:30%;
+}
+
+h1
+{
+cursor:default;
+text-align: center;
+background-size:auto;
+font-size:44px;
+font-family: 'Bangers';
+color: white;
+margin-top:10px;
+margin-bottom: 10px;
+}
+/*---------------contenus-----------------------*/
+
+h2{
+    font-family: 'Bangers', cursive;
+}
+
+h3{
+    font-family: 'Permanent Marker', cursive;
+}
+
+#contenus p
+{ 
+	text-align: justify ;
+	text-indent: 2em ;
+	line-height: 1.7em ;
+}
+/* corps du site */
+
+#contenus {
+    font-size:15px;
+	margin: 0 auto 50px auto;
+    padding: 16px;
+    max-width: 1200px ;
+    text-align: left ;
+    border: 2px solid black ;
+    color: white;
+    background-color: rgba(53,75,96,0.3);
+}
+
+#contenus a{
+    color:yellow;
+    text-decoration: none;
+}
+
+#contenus a:hover{
+    text-decoration:underline;
+}
+/* ---------------------------      home.php       ------------------------------ */
+
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #2d364100;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+/* Partie 1 */
+
+.container {
+     position: relative;
+    width: 25%;
+    margin: auto;
+}
+
+.imagelogo {
+  display: block;
+    width: 100%;
+    height: auto;
+}
+
+.surimg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 93%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(191, 25, 37,0.7);
+    border-radius:200px 200px 200px 200px;
+}
+
+.container:hover .surimg {
+opacity: 1;
+border:solid black 1px;
+}
+
+.texte {
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/*------------------------ Page---------------------------------------1 */
+   
+input{
+background-color: yellow;
+    font-size: initial;
+    }
+/* partie 1 */
+
+.profils {
+  width: 100%;
+}
+
+.perso{
+    width:calc(50% - 7px);
+    display:inline-block;
+}
+.perso + .perso{
+    margin-left:5px;
+}
+
+.team-member {
+    overflow: hidden;
+}
+.team-member, .team-img {
+    position: relative;
+}
+
+.team-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    border: 20px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.90);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.team-member:hover .team-hover .desk {
+    top: 35%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+    opacity: 1;
+}
+.team-hover .desk {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translateY(-55%);
+    -ms-transform: translateY(-55%);
+    transform: translateY(-55%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    padding: 0 20px;
+}
+.desk, .desk h4, .team-hover .s-link a {
+    text-align: center;
+    color: #222;
+}
+.team-member:hover .team-hover .s-link {
+    bottom: 10%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+    opacity: 1;
+}
+.team-hover .s-link {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    -webkit-transform: translateY(45%);
+    -ms-transform: translateY(45%);
+    transform: translateY(45%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    font-size: 35px;
+}
+.desk, .desk h4, .team-hover .s-link a {
+    text-align: center;
+    color: #222;
+}
+.team-member .s-link a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 16px;
+}
+.team-title {
+    position: static;
+    padding: 20px 0;
+    display: inline-block;
+    letter-spacing: 2px;
+    width: 100%;
+}
+.team-title h5 {
+    margin-bottom: 0px;
+    display: block;
+    text-transform: uppercase;
+}
+.team-title span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #a5a5a5;
+    letter-spacing: 1px;
+}
+/* partie 2 */
+
+.role-img{
+background-color:black;
+}
+
+.imageNY{
+opacity: 0;
+}
+
+.role-hover h4{
+	opacity: 1;
+	text-align: center;
+    color: white;
+	position: absolute;
+    top: 40%;
+    font-size:2em;
+    width: 100%;
+   transition: all 0.3s 0.2s;
+}
+.role-hover:hover{
+	opacity:0;
+}
+
+.role-img:hover .imageNY{
+	opacity:1;
+}
+.role-img:hover{
+    cursor: pointer;
+ width:100%;
+transition: all 2s;
+    }
+
+.team-member:hover .role-hover h4{
+ display:none;   
+}
+
+/*Page 3*/
+
+article img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto }
+    }
+
+/*-------------------------Liens / page 4 ------------------------------*/
+article{
+    background-color: #31333b;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 2%;
+    margin-bottom:2%;
+}
+
+/*---------------cacher la sidebar-----------------------*/
+#mySidenav {
+	display:none;
+}
+span.burgersim{
+	display:none;
+}
+
+/*----------------barre de navigation----------------------
+
+
+/* Style the navbar */
+#navbar {
+ margin-top:0;
+list-style: none;
+  overflow: hidden;
+  background-color:rgba(0,0,0,0.5);
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+    font-size: 20px;
+}
+
+#navbar a:hover {
+  background-color: rgba(191,25,37,1);
+  color: white;
+    border-radius: 20%;
+    transition: all 1s; 
+}
+
+#navbar a:active {
+  background-color: rgba(255,224,81,1);
+  color: black;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .contenus {
+  padding-top: 60px;
+}
+
+ul#navbar.sticky{
+    z-index: 2;
+}
+/*------------------footer----------------*/
+
+p#bas
+{
+	padding-right: 10px ;
+	line-height: 30px ;
+	text-align: right ;
+}
+
+#bas{
+    position: fixed;
+    left: auto;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+}
+
+
+#bas p {
+    display: inline-block;
+    
+}
+
+#bas a {
+    background: rgba(191, 25, 37, 0.7);
+    color: white;
+    padding: 10px 15px;
+    line-height: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline;
+}
+
+#bas a:hover {
+   
+    background: rgba(18, 162, 29, 0.5);
+    font-size:22px;;
+    transition: all 1s;
+}
+
+
+/* POUR PAGE SPECIFIQUE */
+
+/*-------------------------------*
+/*      carousel                 */
+/*-------------------------------*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+*/
+
+
+
